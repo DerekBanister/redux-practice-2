@@ -10,3 +10,13 @@ export const deposit = (amount) => {
         })
     }
 }
+
+export const withdraw = (amount) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'withdraw',
+            payload: amount
+        })
+    }
+}
+
