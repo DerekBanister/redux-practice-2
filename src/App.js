@@ -25,12 +25,19 @@ function App() {
 
 
   return (
-    <div className="App">
-      <h1>{account}</h1>
-      <button onClick={() => deposit(1000)}>Deposit</button>
-      <button onClick={() => withdraw(1000)}>Withdraw</button>
+    <div class="container">
+      <div class="header">
+        <h1>Banking Application</h1>
+        <h2>Account Balance: ${account}</h2>
+      </div>
+      <div class="buttons">
+        <button class="deposit" onClick={() => deposit(1000)}>Deposit</button>
+        <button class="withdraw" onClick={() => withdraw(1000)}>Withdraw</button>
+      </div>
     </div>
+
   );
 }
 
 export default App;
+
